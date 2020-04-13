@@ -1,6 +1,6 @@
 <launch>
 
-  <node name="joy_node" pkg="joy" type="joy_node" />
+  <!-- <node name="joy_node" pkg="joy" type="joy_node" /> -->
 
   <!-- <node name="leapmotion_to_twist" pkg="moveit_jog_arm" type="leapmotion_to_twist.py" output="screen" /> -->
 
