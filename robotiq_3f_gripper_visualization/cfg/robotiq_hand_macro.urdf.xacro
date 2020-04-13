@@ -6,7 +6,7 @@ Creates an articulated robotiq-3f-gripper hand with the passed in prefix.  If th
 is only one hand in the urdf then an empty prefix can be used "".  If
 there are multiple hands then a prefix followed by an "_" is needed.
 -->
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robotiq_hand">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="robotiq_hand">
 
   <xacro:macro name="robotiq_finger" params="prefix">
     <!-- Link list -->
@@ -41,6 +41,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_0">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link 1 -->
@@ -76,6 +77,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_1">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link 2 -->
@@ -109,6 +111,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_2">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link 3 -->
@@ -142,6 +145,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_3">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link proximal actuating hinge -->
@@ -173,6 +177,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_proximal_actuating_hinge">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link paraproximal actuating hinge -->
@@ -205,6 +210,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_paraproximal_actuating_hinge">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link proximal actuating bar -->
@@ -236,6 +242,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_proximal_actuating_bar">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link paraproximal bar -->
@@ -267,6 +274,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_paraproximal_bar">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link median actuating hinge -->
@@ -298,6 +306,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_median_actuating_hinge">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link median bar -->
@@ -329,6 +338,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_median_bar">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link paramedian hinge -->
@@ -360,6 +370,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_paramedian_hinge">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link median bar underactuated -->
@@ -391,6 +402,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_median_bar_underactuated">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
 
     <!-- Link paradistal hinge -->
@@ -422,6 +434,7 @@ there are multiple hands then a prefix followed by an "_" is needed.
     <gazebo reference="${prefix}link_paradistal_hinge">
       <mu1>1.1</mu1>
       <mu2>1.1</mu2>
+      <selfCollide>true</selfCollide>
     </gazebo>
     <!-- End of link list -->
 
