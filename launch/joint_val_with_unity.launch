@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- <node name="joy_node" pkg="joy" type="joy_node" /> -->
+
+  <node name="unity_to_robotiq_3f" pkg="moveit_jog_arm" type="unity_to_robotiq_3f.py" output="screen" />
+
+</launch>
